@@ -1,0 +1,128 @@
+<!-- Create a single-page portfolio website.
+
+Sections
+1.Header
+    Name
+    Navigation Menu (Home, About, Skills, Contact)
+2.Hero Section
+    Profile image
+    Short introduction
+    "Hire Me" button
+3.About Section
+    Paragraph about yourself
+4.Skills Section
+    Use cards for skills
+    Example: HTML, CSS, JavaScript, Java
+5.Contact Section
+    Name input
+    Email input
+    Message textarea
+    Submit button
+6.Footer
+    Copyright text
+
+CSS Concepts to Use
+
+✅ Flexbox
+✅ Hover Effects
+✅ Box Model
+✅ Colors & Typography
+✅ Border Radius
+✅ Responsive Design using Media Queries
+
+Bonus
+Smooth scrolling
+Sticky navbar
+Gradient background -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Portfolio</h1>
+        <ul>
+            <!-- <li><h2>ManjuNadh</h2></li> -->
+            <li>
+                <ul class="tabs">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+    <div id="home" class="heroSection">
+        <div>
+            <ul>
+            <li><p class="Aspiring">Aspiring </p> 
+                <br>
+                <p class="TEXT">Full-Stack Developer </p> 
+                <br> 
+                <p class="MPCS">B.Sc. MPCS Student </p>
+                <br>
+                <p class="MERN">JavaScript & MERN Stack Enthusiast </p> 
+            </li> </ul>
+            <ul>
+            <li><button>Hire me</button></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+            <li><img id="img" src="./assets/PhotoRoom-20260529_090403.png" alt=""></li>
+            <li><p class="name">MANJUNADH</p></li>
+            </ul>
+        </div>
+    </div>
+    <div id="about" class="aboutSection">
+        <div class="about"><p>Hi, I'm Manjunadh, a B.Sc. student specializing in Mathematics, Physics, and Computer Science. I am an aspiring Full-Stack Web Developer currently learning JavaScript, Node.js, React, MongoDB, and modern web technologies. I enjoy building responsive and user-friendly web applications while continuously improving my programming and problem-solving skills.
+Alongside web development, I have a strong interest in Physics and technology. I am passionate about learning, creating projects, and exploring new opportunities to grow as a developer.
+My goal is to build impactful applications that solve real-world problems and contribute to meaningful projects.</p>
+        </div>
+    </div>
+    <div id="skills" class="skillsSection">
+        
+        <p>Skills</p>
+        <ul>
+            <div class="Lheading">
+            <li><button >HTML<img src="./assets/html.png" alt=""></button></li>
+            <li><button>CSS <img src="./assets/css-3.png" alt=""></button></li>
+            <li><button>JAVA SCRIPT <img src="./assets/java-script.png" alt=""></button></li>
+            <li><button>REACT <img src="./assets/physics.png" alt=""></button></li>
+            </div>
+            <div class="Rheading">
+            <li><button>EXPRESS <img src="./assets/js.png" alt=""></button></li>
+            <li><button>NODE <img src="./assets/programing.png" alt=""></button></li>
+            <li><button>MONGODB <img src="./assets/database.png" alt=""></button></li>
+            <li><button>Github <img src="./assets/github.png" alt=""></button></li>
+            </div>
+        </ul>
+
+    </div>
+    <div id="contact" class="contactSection">
+        <div>
+        <p>Contact me</p>
+        <ul>
+            <li><input type="text" placeholder="Enter your name"></li>
+            <li><input type="text" placeholder="Enter your E-mail"></li>
+            <li><input type="text" placeholder="Say something..."></li>
+            <li><input class="submit" type="submit" placeholder="submit"></li>
+        </ul>
+        </div>
+    </div>
+    <footer>
+        <ul>
+            <li><p>© 2026 Manjunadh. Designed & Developed by Manjunadh.</p></li>
+        </ul>
+    </footer>
+    
+</body>
+</html>

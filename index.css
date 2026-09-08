@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Boldonse&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Michroma&family=Playwrite+GB+S+Guides:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    border: 8px solid #FF5722;
+    /* background-color: #ffffff */
+    background:linear-gradient(135deg,#ffffff ,#ff9d76);
+}
+
+header{
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    
+}
+h1{
+    padding-left: 1rem;
+    background-color:#FF5722;
+    font-size: 4rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+header ul{
+    font-size: 1.7rem;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tabs li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Michroma", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 10px;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    animation: slidebottom 0.5s ;
+}
+
+.tabs li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.tabs li:hover{
+    background-color: #FF5722;
+    cursor: pointer;
+}
+
+
+
+.heroSection{
+    display: flex;    
+}
+
+.heroSection div ul {
+    list-style-type: none;
+}
+
+.heroSection div{
+    width: 50%;
+    height:50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.heroSection div li img{
+    height: 30rem;
+    border-radius: 20px;
+    border-top: 1px solid #FF5722 ;
+    border-left:2px solid #FF5722;
+    animation: fadein 2s;
+}
+
+.heroSection div li .name{
+     font-family: "Playwrite GB S Guides", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.heroSection div ul li p{
+    font-size: 3rem;
+    padding-left: 1rem;
+}
+
+.heroSection div ul li .Aspiring{
+    animation: slideleft 0.5s ease-in-out;    
+}
+
+.heroSection div ul li .TEXT{
+    font-size: 4rem;
+    font-family: "Boldonse", system-ui;
+    animation: slideright 0.5s ease-in-out; 
+}
+
+.heroSection div ul li .MPCS{
+    font-size: 3rem;
+    font-family: "Playwrite GB S Guides", cursive;
+    font-weight: 400;
+    font-style: italic;
+    animation: slideleft 0.5s ease-in-out;
+}
+
+.heroSection div ul li .MERN{
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    animation: slideright 0.5s ease-in-out;
+}
+
+.heroSection div ul li button{
+    background-color:none;
+    margin-top: 2rem;
+    height: 4rem;
+    width: 10rem;
+    border-radius: 5px;
+    font-size: 2rem;
+    border: none;
+    border-top: 1px solid #FF5722;
+    border-left:2px solid #FF5722;
+    border-right: 1px solid #FF5722;
+    border-bottom: 1px solid #FF5722 ;
+    transition: 1.5s;
+    animation:bounce 1s ;
+}
+
+.heroSection div ul li button:hover{
+    background-color: #FF5722;
+    border: 0px;
+}
+
+
+
+.aboutSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    width: 100%;
+}
+.aboutSection .about{
+    display: flex;
+    align-items: center;
+    border: 2px solid #FF5722 ;
+    font-size: 1.5rem;
+    height: 15rem;
+    width: 80%;
+    border-radius: 15px;
+    background-color: #fbede8;
+}
+
+.aboutSection .about p{
+    padding: 2rem;
+
+    /* animation */
+    font-size: 30px;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right:3px solid black ;
+    animation: typing 4s steps(10000,end)forwards,
+             blink 0.7s infinite;
+    
+}
+
+/* SKills Section */
+
+.skillsSection p{
+    height: 5rem;
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    padding-left: 1rem;
+
+}
+
+.skillsSection ul {
+    height: 50rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.skillsSection ul div li{
+    margin: 5rem;
+}
+
+.skillsSection ul div li button{
+    border: 2px solid #FF5722;
+    height :8rem;
+    width: 20rem;
+    border-radius: 15px;
+    font-size:2rem;
+    font-family: "Boldonse", system-ui;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.skillsSection ul div li button img{
+    height: 4rem;
+}
+
+.contactSection{
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactSection div{
+    width: 40%;
+    border: 2px solid #FF5722;
+    border-radius: 15px;
+}
+
+.contactSection div p{
+
+    height: 3rem;
+    font-size: 3rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.contactSection div ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.contactSection div ul li{
+    padding: 1rem;
+}
+
+.contactSection div ul li input{
+    outline: none;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.contactSection div ul li .submit{
+    background-color:none;
+    margin-top: 2rem;
+    height: 4rem;
+    width: 10rem;
+    border-radius: 5px;
+    font-size: 2rem;
+    border: none;
+    border-top: 1px solid #FF5722;
+    border-left:2px solid #FF5722;
+    border-right: 1px solid #FF5722;
+    border-bottom: 1px solid #FF5722 ;
+    transition: 1.5s;
+}
+
+.contactSection div ul li .submit:hover{
+    background-color: #FF5722;
+}
+
+
+footer{
+    margin-top: 5rem;
+    height: 5rem;
+    background-color: #FF5722;
+    display: flex;
+    align-items: end;
+}
+
+
+
+
+
+
+/* Animations */
+
+@keyframes fadein{
+    0%{
+        opacity: 0%;
+    }
+
+    50%{
+       
+    }
+
+    100%{
+        opacity: 100%;
+    }
+}
+
+@keyframes bounce {
+     0%{
+        transform:translateY(0);
+        
+        background-color:#FF5722;
+    }
+
+    50%{
+        transform:translateY(-80px);
+        background-color:#FF5722;
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+}
+
+@keyframes slideright{
+    0%{
+        transform: translateX(-1000px);
+    }
+
+    50%{}
+
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slideleft{
+    0%{
+        transform: translateX(1000px);
+    }
+
+    50%{}
+
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slidebottom{
+    0%{
+        transform: translateY(-1000px);
+    }
+
+    50%{}
+
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+
+
+@keyframes slidetop{
+    0%{
+        transform: translateY(1000px);
+    }
+
+    50%{}
+
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes typing {
+    from{
+        width: 0;
+    }
+    to{
+        width: 100ch;
+    }
+}
+
+@keyframes blink {
+    50%{
+        border-color: transparent;
+    }
+        
+}
+
+@keyframes scaleUp {
+    from{
+        scale:100%;
+    }
+    to{
+        width:105%;
+    }
+}
